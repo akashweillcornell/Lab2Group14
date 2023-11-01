@@ -5,7 +5,7 @@
 \title{Function calculates either the mean, median, or standard deviation of the DRG
 codes. over all of the DRG codes for average Medicare payments}
 \usage{
-stats(statistics)
+stats(stat_type = "mean")
 }
 \arguments{
 \item{statistics}{is a string which specifies the statistic and can take
