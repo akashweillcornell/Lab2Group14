@@ -8,7 +8,7 @@ library(tidyverse)
 #' @export
 payment <- function(payment_type)
 {
-  data <- read_csv("data/DRG_data.csv")
+  data <- read.csv("data/DRG_data.csv")
 
   medicare <- data %>%
     group_by(DRG.Definition) %>%
