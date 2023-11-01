@@ -7,7 +7,7 @@
 payment(payment_type)
 }
 \arguments{
-\item{payment}{Type of payment}
+\item{payment}{Type of payment - "medicare", "total", "covered"}
 }
 \value{
 Boxplot

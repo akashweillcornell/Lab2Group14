@@ -53,4 +53,5 @@ payment <- function(payment_type)
       theme(plot.title = element_text(hjust = 0.5)) +
       theme_minimal()
   }
+  plt
 }
