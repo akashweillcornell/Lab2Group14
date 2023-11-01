@@ -30,7 +30,8 @@ payment <- function(payment_type)
            title = "Average Medicare Payment by DRG Code") +
       theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5),
-            axis.text.x = element_text(angle = 90))
+            axis.text.x = element_text(angle = 90,
+                                       size = 5))
   }
   else if (payment_type == "total"){
     plt <- total %>%
@@ -42,7 +43,8 @@ payment <- function(payment_type)
            title = "Average Total Payment by DRG Code") +
       theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5),
-            axis.text.x = element_text(angle = 90))
+            axis.text.x = element_text(angle = 90,
+                                       size = 5))
   }
   else{
     plt <- covered %>%
@@ -54,7 +56,8 @@ payment <- function(payment_type)
            title = "Average Covered Payment by DRG Code") +
       theme_minimal() +
       theme(plot.title = element_text(hjust = 0.5),
-            axis.text.x = element_text(angle = 90))
+            axis.text.x = element_text(angle = 90,
+                                       size = 5))
   }
   plt
 }
