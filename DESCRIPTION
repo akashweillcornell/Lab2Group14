@@ -2,7 +2,7 @@ Package: Lab2Group14
 Title: Analysis of Medicare Payments by DRG Code
 Version: 0.0.0.9000
 Authors@R: 
-    person("Xiao", "Jin", email = "xiao.jin@example.com", role = c("aut", "cre")),
+    person("Xiao", "Jin", email = "xiao.jin@example.com", role = c("aut", "cre"))
     person("Akash", "Das", email = "akash.das@example.com", role = c("aut", "cre"))
 Description: A package for analyzing Medicare payments by DRG code. Provides functions for calculating basic statistics such as mean, median, and standard deviations, as well as generating boxplots. Designed to work with Medicare data from 2010 to 2020.
 License: MIT + file LICENSE
