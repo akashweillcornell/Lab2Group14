@@ -28,19 +28,21 @@ payment <- function(payment_type)
       labs(x = "DRG Codes",
            y = "Average Medicare Payment (dollars)",
            title = "Average Medicare Payment by DRG Code") +
-      theme(plot.title = element_text(hjust = 0.5)) +
-      theme_minimal()
+      theme_minimal() +
+      theme(plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90))
   }
   else if (payment_type == "total"){
     plt <- total %>%
-      ggplot(aes(x=DRG.Definition,
-                 y=mean)) +
+      ggplot(aes(x = DRG.Definition,
+                 y = mean)) +
       geom_boxplot() +
       labs(x = "DRG Codes",
            y = "Average Total Payment (dollars)",
            title = "Average Total Payment by DRG Code") +
-      theme(plot.title = element_text(hjust = 0.5)) +
-      theme_minimal()
+      theme_minimal() +
+      theme(plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90))
   }
   else{
     plt <- covered %>%
@@ -50,8 +52,9 @@ payment <- function(payment_type)
       labs(x = "DRG Codes",
            y = "Average Covered Payment (dollars)",
            title = "Average Covered Payment by DRG Code") +
-      theme(plot.title = element_text(hjust = 0.5)) +
-      theme_minimal()
+      theme_minimal() +
+      theme(plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90))
   }
   plt
 }

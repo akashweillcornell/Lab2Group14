@@ -10,20 +10,19 @@ output: html_document
 ## Lab #2: Making an R Package
 
 ```{r, message = FALSE}
-library(document)
 library(tidyverse)
-library(ggplot2)
 library(roxygen2)
+library(devtools)
 ```
 
 ```{r, message = FALSE}
-devtools::install_github('nsubbiah8/Lab2Group9', auth_token = "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")
+devtools::install_github('https://github.com/akashweillcornell/Lab2Group14')
+```
+
+```{r, fig.height= 10, fig.width = 10}
+Lab2Group14::payment("medicare")
 ```
 
 ```{r}
-Lab2Group9::payment("medicare")
-```
-
-```{r}
-Lab2Group9::f2("mean")
+Lab2Group14::stats("mean")
 ```
