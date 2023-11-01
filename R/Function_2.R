@@ -11,6 +11,7 @@ stats <- function(stat_type = "mean") {
 
   data <- read.csv("data/DRG_data.csv")
 
+
   # Check if the input statistic is valid
   if (!(stat_type %in% c("mean", "median", "sd"))) {
     stop("Invalid statistic. Please choose 'mean', 'median', or 'sd'.")
